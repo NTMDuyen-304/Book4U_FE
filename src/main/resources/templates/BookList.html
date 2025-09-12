@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Collection</title>
+    <link rel="stylesheet" href="../static/css/BookList.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>Library Collection</h1>
+        <p>Discover your next great read from our extensive collection</p>
+      </header>
+
+      <!-- Search and Filter -->
+      <section class="search-filter">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search books by title or author..."
+        />
+        <select id="categorySelect">
+          <option value="">All Categories</option>
+        </select>
+        <div id="resultCount"></div>
+      </section>
+
+      <!-- Books Grid -->
+      <section id="booksGrid" class="books-grid"></section>
+
+      <!-- No books found -->
+      <div id="noBooks" class="no-books hidden">
+        <p>No books found. Try adjusting your search terms or filters.</p>
+      </div>
+    </div>
+
+    <script src="../static/js/BookList.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+/* Header styles */
+header {
+  background-color: white;
+  border-bottom: 2px solid #e9d5ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: linear-gradient(to right, #9333ea, #7e22ce);
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #9333ea 0%, #5b21b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: 0.2s;
+  color: #4b5563;
+}
+
+nav button.active {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+nav button:hover {
+  background-color: #faf5ff;
+  color: #7e22ce;
+}
+
+/* User menu */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-icon {
+  background-color: #f3e8ff;
+  padding: 8px;
+  border-radius: 50%;
+  color: #7e22ce;
+}
+
+.user-details {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .user-details {
+    display: block;
+  }
+  .user-details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+  }
+  .user-details .role {
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: capitalize;
+  }
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: none;
+  color: #4b5563;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}

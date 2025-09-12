@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book4U - Login</title>
+    <link rel="stylesheet" href="../static/css/Login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">📚</div>
+        <h2>Welcome to Book4U</h2>
+        <p>Sign in to your student library account</p>
+      </div>
+
+      <!-- Form -->
+      <form id="loginForm" class="form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <div class="input-wrapper">
+            <span class="icon">📧</span>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <span class="icon">🔒</span>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="button" id="togglePassword" class="toggle-btn">
+              👁️
+            </button>
+          </div>
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <button type="submit" id="loginBtn" class="btn">Sign In</button>
+
+        <!-- Demo accounts -->
+        <div class="divider"><span>Demo Accounts</span></div>
+        <div class="demo-buttons">
+          <button
+            type="button"
+            onclick="fillDemo('student')"
+            class="btn-outline"
+          >
+            Student Demo
+          </button>
+          <button type="button" onclick="fillDemo('admin')" class="btn-outline">
+            Admin Demo
+          </button>
+        </div>
+
+        <div class="switch">
+          Don't have an account? <a href="./Register.html">Sign up here</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="../static/js/Login.js"></script>
+  </body>
+</html>

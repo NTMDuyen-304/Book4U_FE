@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  color: #333;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-info h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.book-info p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.icon.purple {
+  background: linear-gradient(to right, #9333ea, #7e22ce);
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.reading-time {
+  font-size: 14px;
+  color: #555;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.about {
+  background: #f3e8ff;
+  border-left: 4px solid #9333ea;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.note {
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+blockquote {
+  border-left: 4px solid #9333ea;
+  margin: 20px 0;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.tips {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.tips h4 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.open-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #9333ea, #7e22ce);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.open-btn:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Detail</title>
+    <link rel="stylesheet" href="../static/css/BookDetail.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <button id="backBtn" class="back-btn">← Back to Books</button>
+
+      <div class="book-card">
+        <div class="book-cover">
+          <img id="bookCover" src="" alt="Book Cover" />
+        </div>
+
+        <div class="book-info">
+          <div class="header">
+            <div>
+              <h1 id="bookTitle"></h1>
+              <div class="author">
+                <span id="bookAuthor"></span>
+              </div>
+            </div>
+            <span id="bookCategory" class="category"></span>
+          </div>
+
+          <!-- Book Stats -->
+          <div class="stats">
+            <div>
+              <div>Published</div>
+              <div id="bookYear"></div>
+            </div>
+            <div>
+              <div>Available</div>
+              <div id="bookStock"></div>
+            </div>
+            <div>
+              <div>Format</div>
+              <div>Digital + Physical</div>
+            </div>
+            <div>
+              <div>Status</div>
+              <div id="bookStatus"></div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div id="bookDescription"></div>
+
+          <!-- Action Buttons -->
+          <div class="actions">
+            <button id="borrowBtn" class="btn-primary">Borrow Book</button>
+            <button id="readBtn" class="btn-secondary">Read Online</button>
+          </div>
+
+          <!-- Messages -->
+          <div id="message"></div>
+        </div>
+      </div>
+
+      <!-- Extra Info -->
+      <div class="extra-info">
+        <div>
+          <h4>Borrowing Information</h4>
+          <ul>
+            <li>• Standard borrowing period: 14 days</li>
+            <li>• One renewal allowed (14 additional days)</li>
+            <li>• Late fees apply for overdue books</li>
+            <li>• Online reading available 24/7</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Online Access</h4>
+          <ul>
+            <li>• Full text available online</li>
+            <li>• Reading history tracked</li>
+            <li>• No time limit for online reading</li>
+            <li>• Accessible from any device</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/js/BookDetail.js"></script>
+  </body>
+</html>

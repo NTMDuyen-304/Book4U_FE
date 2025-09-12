@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.back-btn {
+  color: #6b21a8;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.book-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.category {
+  background: #ede9fe;
+  color: #6b21a8;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.stats div {
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 10px;
+  background: #9333ea;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #9333ea;
+  color: #9333ea;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.extra-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.extra-info h4 {
+  margin-bottom: 10px;
+}

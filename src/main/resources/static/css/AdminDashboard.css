@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+}
+
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.card.blue {
+  background: #007bff;
+}
+.card.green {
+  background: #28a745;
+}
+.card.yellow {
+  background: #ffc107;
+  color: black;
+}
+.card.red {
+  background: #dc3545;
+}
+
+.actions {
+  padding: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+button.edit {
+  color: blue;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button.delete {
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
