@@ -96,10 +96,9 @@ function navigate(view) {
   document.getElementById("view-title").textContent = "Current view: " + view;
 }
 
-// Hàm logout
 function logout() {
   alert("You have been logged out!");
-  location.reload();
+  window.location.href = "Login.html";
 }
 
 // Render lần đầu

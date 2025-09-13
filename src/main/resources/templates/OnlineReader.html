@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book4U - Online Reader</title>
     <link rel="stylesheet" href="../static/css/OnlineReader.css" />
+    <link rel="stylesheet" href="../static/css/Header.css" />
+    <link rel="stylesheet" href="../static/css/Footer.css" />
   </head>
   <body>
+    <!-- Header placeholder -->
+    <div id="header"></div>
+
     <!-- Online Reader -->
-    <div id="online-reader" class="overlay hidden">
-      <!-- Header -->
-      <div class="header">
+    <div id="online-reader" class="overlay">
+      <div class="reader-header">
         <div class="book-info">
           <div class="icon purple"><span>📖</span></div>
           <div>
@@ -23,11 +28,9 @@
         </div>
       </div>
 
-      <!-- Reader Content -->
       <div class="content">
         <div class="container">
           <h1 id="reader-title"></h1>
-
           <div class="about">
             <h2>About this book</h2>
             <p id="book-description"></p>
@@ -37,58 +40,19 @@
               <p><strong>Published:</strong> <span id="meta-year"></span></p>
             </div>
           </div>
-
+          <!-- Nội dung sách demo -->
           <h2>Chapter 1: Introduction</h2>
-          <p>
-            Welcome to this comprehensive guide. This digital edition provides
-            full access to content, allowing you to read at your own pace.
-          </p>
-          <p>
-            This book covers essential concepts and practical applications. Each
-            chapter builds upon the previous one.
-          </p>
-
-          <h3>Learning Objectives</h3>
-          <ul>
-            <li>Understand the fundamental concepts</li>
-            <li>Apply theoretical knowledge</li>
-            <li>Develop critical thinking skills</li>
-            <li>Prepare for advanced topics</li>
-          </ul>
-
-          <div class="note">
-            <p>
-              <strong>Note:</strong> This is a demo version. In real usage, the
-              book content would be loaded from a URL.
-            </p>
-          </div>
-
+          <p>Welcome to this comprehensive guide...</p>
           <h2>Chapter 2: Core Concepts</h2>
-          <p>
-            In this chapter, we delve deeper into the core concepts.
-            Understanding these is crucial for mastering the subject matter.
-          </p>
-
-          <blockquote>
-            "Learning is not attained by chance, it must be sought for with
-            ardor and diligence." - Abigail Adams
-          </blockquote>
-
-          <div class="tips">
-            <h4>Reading Tips</h4>
-            <ul>
-              <li>Take breaks every 30-45 minutes</li>
-              <li>Make notes of key concepts</li>
-              <li>Review previous chapters if unclear</li>
-              <li>Discuss topics with peers</li>
-            </ul>
-          </div>
+          <p>In this chapter, we delve deeper...</p>
         </div>
       </div>
     </div>
 
-    <button id="open-reader" class="open-btn">📚 Open Sample Book</button>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
 
     <script src="../static/js/OnlineReader.js"></script>
+    <script src="../static/js/layout.js"></script>
   </body>
 </html>

@@ -7,12 +7,14 @@ const loginBtn = document.getElementById("loginBtn");
 
 let showPassword = false;
 
+// Toggle hiển thị mật khẩu
 togglePasswordBtn.addEventListener("click", () => {
   showPassword = !showPassword;
   passwordInput.type = showPassword ? "text" : "password";
   togglePasswordBtn.textContent = showPassword ? "🙈" : "👁️";
 });
 
+// Xử lý submit form
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   errorBox.style.display = "none";
@@ -34,17 +36,21 @@ form.addEventListener("submit", (e) => {
   loginBtn.innerHTML = `<div class="spinner"></div>`;
 
   setTimeout(() => {
-    if (
-      (email === "student@book4u.edu" && password === "student123") ||
-      (email === "admin@book4u.edu" && password === "admin123")
-    ) {
-      alert("✅ Login successful!");
-      form.reset();
-    } else {
+    if (email === "student@book4u.edu" && password === "student123") {
+      // Login success as student
+      window.location.href = "fragments/Header.html";
+    } else if (email === "admin@book4u.edu" && password === "admin123") {
+      // Login success as admin
+      window.location.href = "AdminDashboard.html";
       showError("Invalid email or password");
+      loginBtn.disabled = false;
+      loginBtn.textContent = "Sign In";
+      return;
     }
+
     loginBtn.disabled = false;
     loginBtn.textContent = "Sign In";
+    form.reset();
   }, 1000);
 });
 

@@ -4,54 +4,56 @@
     <meta charset="UTF-8" />
     <title>Admin Dashboard - Book4U</title>
     <link rel="stylesheet" href="../static/css/AdminDashboard.css" />
+    <link rel="stylesheet" href="../static/css/Header.css" />
+    <link rel="stylesheet" href="../static/css/Footer.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <h1>Admin Dashboard</h1>
-      <p>Manage your library system</p>
-    </header>
+    <!-- Header placeholder -->
+    <div id="header"></div>
 
-    <!-- Stats -->
-    <section class="stats">
-      <div class="card blue">
-        <h3>Total Students</h3>
-        <p id="totalUsers">0</p>
-      </div>
-      <div class="card green">
-        <h3>Total Books</h3>
-        <p id="totalBooks">0</p>
-      </div>
-      <div class="card yellow">
-        <h3>Currently Borrowed</h3>
-        <p id="totalBorrowed">0</p>
-      </div>
-      <div class="card red">
-        <h3>Overdue Books</h3>
-        <p id="overdueBooks">0</p>
-      </div>
-    </section>
+    <!-- Main content -->
+    <main>
+      <!-- Stats -->
+      <section class="stats">
+        <div class="card blue">
+          <h3>Total Students</h3>
+          <p id="totalUsers">0</p>
+        </div>
+        <div class="card green">
+          <h3>Total Books</h3>
+          <p id="totalBooks">0</p>
+        </div>
+        <div class="card yellow">
+          <h3>Currently Borrowed</h3>
+          <p id="totalBorrowed">0</p>
+        </div>
+        <div class="card red">
+          <h3>Overdue Books</h3>
+          <p id="overdueBooks">0</p>
+        </div>
+      </section>
 
-    <!-- Quick Actions -->
-    <section class="actions">
-      <button onclick="openModal()">+ Add New Book</button>
-    </section>
+      <!-- Quick Actions -->
+      <section class="actions">
+        <button onclick="openModal()">+ Add New Book</button>
+      </section>
 
-    <!-- Books Table -->
-    <section class="table-container">
-      <h2>Books Management</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Book Details</th>
-            <th>Category</th>
-            <th>Stock</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="booksTable"></tbody>
-      </table>
-    </section>
+      <!-- Books Table -->
+      <section class="table-container">
+        <h2>Books Management</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Book Details</th>
+              <th>Category</th>
+              <th>Stock</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="booksTable"></tbody>
+        </table>
+      </section>
+    </main>
 
     <!-- Modal Add/Edit Book -->
     <div id="bookModal" class="modal">
@@ -79,6 +81,11 @@
       </div>
     </div>
 
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
     <script src="../static/js/AdminDashboard.js"></script>
+
+    <script src="../static/js/layout.js"></script>
   </body>
 </html>
