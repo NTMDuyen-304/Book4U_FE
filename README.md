@@ -58,8 +58,8 @@ BOOK4U_FE/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/book4u-frontend.git
-   cd book4u-frontend
+   git clone https://github.com/NTMDuyen-304/Book4U_FE.git
+   cd Book4U_FE
    ```
 
 2. **Install dependencies**
@@ -102,4 +102,5 @@ REACT_APP_API_URL=http://localhost:5000/api
 ## 👨‍💻 Authors
 
 - **[Nguyen Thi My Duyen - 22520350]** – Project Developer
-- Final Project – Software Engineering Course
+- **[Nguyen Thi Huyen Linh - 22520772]** – Project Developer
+- Final Project – Web Applications Development
